@@ -21,6 +21,10 @@ function isValid(pForm) {
                 amountErr.innerHtml = "Enter Valid Amount";
                 flag = false;
             }
+			elseif ($amount <= 0) {
+				amountErr.innerHTML = "Enter Valid Amount!";
+				$flag = true;
+			}
 
             return flag;
         }
